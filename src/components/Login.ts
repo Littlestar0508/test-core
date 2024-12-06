@@ -89,7 +89,7 @@ class Login extends LitElement {
         text: "메인 페이지로 이동합니다.",
         icon: "success",
         confirmButtonText: "닫기",
-      }).then((res) => {
+      }).then(() => {
         setTimeout(() => {
           location.href = "/index.html";
         }, 300);
@@ -100,7 +100,7 @@ class Login extends LitElement {
         text: "ID 또는 PWD가 올바르지 않습니다.",
         icon: "error",
         confirmButtonText: "닫기",
-      }).then((res) => {
+      }).then(() => {
         this.idInput.value = "";
         this.pwInput.value = "";
 
